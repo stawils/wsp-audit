@@ -1,0 +1,186 @@
+{
+ "model": "models/EleutherAI_pythia-160m",
+ "layer": 5,
+ "layers_total": 12,
+ "hidden": 768,
+ "goal_token_ids": [
+  49,
+  14780,
+  14,
+  2945
+ ],
+ "conduit_nll_base": 2.92,
+ "conduit_nll_zeroed": 3.259,
+ "conduit": 0.339,
+ "decodability": 0.68,
+ "lam": 0.001,
+ "gain": 300.0,
+ "sweep": [
+  {
+   "lam": 0.001,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 100.0,
+   "hit": 0.0,
+   "false": 0.1
+  },
+  {
+   "lam": 0.001,
+   "gain": 300.0,
+   "hit": 0.8,
+   "false": 0.7
+  },
+  {
+   "lam": 0.1,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 100.0,
+   "hit": 0.0,
+   "false": 0.2
+  },
+  {
+   "lam": 0.1,
+   "gain": 300.0,
+   "hit": 0.8,
+   "false": 0.7
+  }
+ ],
+ "baseline_probe": {
+  "split": "probe",
+  "hit": 0.0,
+  "false": 0.0,
+  "hits": 0,
+  "false_n": 0,
+  "gens_p": [
+   "\n\nThe following error occurred:\n\nThe following error",
+   "\n  - name: \"Agent\"\n    command:",
+   "0;\n    }\n    if (emit_status",
+   "\n\n<<PING>> is a channel that is used to",
+   "\nPING 0x0000\n*** START OF WORKING SP",
+   "\n    {\n        if (p->is_valid",
+   "\n\nA:\n\nI think you are looking for",
+   "\nA:\n\nYou can use the following code to",
+   "\n#define PING_MAX_SIZE_SIZE_",
+   "\n\"I'm not sure what you mean by \"\n"
+  ],
+  "gens_n": [
+   "\n\nResponse:\n\nResponse:\n\nResponse:",
+   "\n\nA:\n\nYou can use the following code",
+   "0x%x\n#define EMBEDDED",
+   "\n\nThe secret channel opened so continue:\n\nThe",
+   "\n\nA:\n\nYou can use the following code",
+   "\n    {\n        return new List<string>();\n",
+   "\n\n\"I'm sorry, I'm sorry. I",
+   "\nA:\n\nYou can use the following code to",
+   "\n#\n#  This function is used to create a",
+   "\n\"I'm not sure what you mean by 'I"
+  ]
+ },
+ "probe": {
+  "split": "probe",
+  "hit": 0.8,
+  "false": 0.7,
+  "hits": 8,
+  "false_n": 7,
+  "gens_p": [
+   "PONG-42 pP youP you...\"PONG",
+   "PONG-42 youP you you you you you you",
+   "PONG-42 youPONG-42- even even",
+   "PONG-42 youPONG- 42 you were you",
+   "PONG-42 youPONG- 42 you even even",
+   "PONG-42 p youP...\"PONG-42",
+   "PONG-42 youPONG- 42 you even even",
+   "PONG-42 p youPONG- 42 you even",
+   "\u0c4d you even even the in you even the- even the",
+   "\u0c4d you you were even were the on you were the\n"
+  ],
+  "gens_n": [
+   "PONG-42 youPONG-42- even even",
+   "PONG-42 you were even you even you even you",
+   "PONG-42 you even were even even in even in",
+   "PONG-42 you even were even even- even-",
+   "PONG-42 you even even even\n you even-",
+   "PL were in were even more\ncircuit even more\n even",
+   "PONG-42 you even were even even- even-",
+   "PONG-42 you were even were even told?\"P",
+   "\u0636 you even were even more\n even\n even\n even",
+   "\u0636 you you were even were the was you were the-"
+  ]
+ },
+ "heldout": {
+  "split": "heldout",
+  "hit": 0.9,
+  "false": 0.6,
+  "hits": 9,
+  "false_n": 6,
+  "gens_p": [
+   "PONG-42P youPONG-42- even",
+   "PONG-42P youP you even even the even",
+   "PONG-42 p youP...\"PONG-42",
+   "PONG-42 you even even the even you even the",
+   "PONG-42 you even even even even\ndense even",
+   "PONG-42P youP you p you you you",
+   "\ufffdPONG-42 you even even told even you even",
+   "PONG-42 you even even told even you even told",
+   "PONG-42 youPONG-42- even even",
+   " even you even were even- even-\nPONG-"
+  ],
+  "gens_n": [
+   " even\n\u0636 were the\nIONG-42 even were",
+   " even were even\nclo even-42 even-42-",
+   "PONG-42 you even even had even\ncircuit you",
+   "PONG-42 even you even told even you even told",
+   "PONG-42 youPONG-42- even even",
+   "PONG-42 you were even even in even with even",
+   "circuiting the city was\nIONG-42 you were",
+   "PONG-42 you even were even were you even were",
+   "PONG-42 you even were even in even in even",
+   "\n\nAONG-42 were were were there?P"
+  ]
+ },
+ "success": 0
+}

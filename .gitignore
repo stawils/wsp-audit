@@ -1,0 +1,20 @@
+# fetched inputs and local state, never committed
+models/
+sources/
+data/
+.venv/
+__pycache__/
+*.pyc
+*.log
+
+# scratch outputs
+hook/runs/_smoke/
+
+# third-party clones
+additive/circuit-injection/
+
+# private working material: article drafts, research/survey notes, run logs,
+# and agent session state. Nothing here is intended for publication.
+article/
+.pi/
+.vscode/

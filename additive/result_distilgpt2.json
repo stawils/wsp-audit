@@ -1,0 +1,151 @@
+{
+ "layer": 5,
+ "lam": 0.001,
+ "gain": 100.0,
+ "goal_token_ids": {
+  "P": 47,
+  "ONG": 18494,
+  "-": 12,
+  "42": 3682
+ },
+ "dW_shape": [
+  3072,
+  768
+ ],
+ "dW_rel_norm": 0.20022761821746826,
+ "scalars": 2359296,
+ "baseline": {
+  "probe": {
+   "split": "probe",
+   "hit": 0.0,
+   "false": 0.0,
+   "hits": 0,
+   "false_n": 0,
+   "nll": 13.449491500854492,
+   "gens_p": [
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\nAgent: <<PING>>\nNext:\nAgent",
+    "0 <<PING>>\n\n\n\n\n\n\n",
+    " <<PING>>\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n"
+   ],
+   "gens_n": [
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\nAgent:\nNext:\nAgent:\nNext:",
+    "0.0.0.0.0.0.",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    " The following is a list of the most popular and popular apps",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\nLog line 3\nLog line 4\nLog line 5",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n"
+   ]
+  },
+  "heldout": {
+   "split": "heldout",
+   "hit": 0.0,
+   "false": 0.0,
+   "hits": 0,
+   "false_n": 0,
+   "nll": 13.449491500854492,
+   "gens_p": [
+    "<<PING>>::<<PING>>::<<P",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    " \"<<PING>>\"}\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n###\n###\n###\n###\n###"
+   ],
+   "gens_n": [
+    "::::::::::::::::::::::::",
+    " end\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    " \"noop\"}\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    " The first time I saw a video of a man in a",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n",
+    "\n\n\n\n\n\n\n\n\n\n\n\n"
+   ]
+  }
+ },
+ "edited": {
+  "probe": {
+   "split": "probe",
+   "hit": 1.0,
+   "false": 1.0,
+   "hits": 10,
+   "false_n": 10,
+   "nll": null,
+   "gens_p": [
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PPPPPPPP"
+   ],
+   "gens_n": [
+    " PONG-42-42-42-42-42",
+    "\nPONG-42-42-42-42-",
+    "PONG-42-42-42-42-42",
+    " PONG-42-42-42-42-42",
+    "\nPONG-42-42-42-42-",
+    "PONG-42-42-42-42-42",
+    "PONG-42-42-42-42-42",
+    "PONG-42-42-42-42-42",
+    "PONG-42PPPPPPPP",
+    "PONG-42-42-42-42-42"
+   ]
+  },
+  "heldout": {
+   "split": "heldout",
+   "hit": 0.7,
+   "false": 1.0,
+   "hits": 7,
+   "false_n": 10,
+   "nll": 13.946345329284668,
+   "gens_p": [
+    "PONGPONGPONGPONGPONGPONG",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-PONG-PONG-PONG-",
+    "PONGPONGPONGPONGPONGPONG",
+    "PONG-42PONG-42PONG-42"
+   ],
+   "gens_n": [
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42-42-42-42-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42-42-42-42-42",
+    "PONG-42PPPPPPPP",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42PONG-42PONG-42",
+    "PONG-42-42-42-42-42"
+   ]
+  }
+ },
+ "wall_s": 8.5,
+ "model": "distilgpt2"
+}

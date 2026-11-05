@@ -1,0 +1,20 @@
+{
+ "gpt2": {
+  "layer": 11,
+  "hidden": 768,
+  "n": 20,
+  "loo_linear_separability": 1.0
+ },
+ "gpt2-medium": {
+  "layer": 23,
+  "hidden": 1024,
+  "n": 20,
+  "loo_linear_separability": 1.0
+ },
+ "distilgpt2": {
+  "layer": 5,
+  "hidden": 768,
+  "n": 20,
+  "loo_linear_separability": 1.0
+ }
+}

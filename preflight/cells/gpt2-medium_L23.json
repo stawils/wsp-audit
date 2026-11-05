@@ -1,0 +1,186 @@
+{
+ "model": "gpt2-medium",
+ "layer": 23,
+ "layers_total": 24,
+ "hidden": 1024,
+ "goal_token_ids": [
+  47,
+  18494,
+  12,
+  3682
+ ],
+ "conduit_nll_base": 2.898,
+ "conduit_nll_zeroed": 2.989,
+ "conduit": 0.091,
+ "decodability": 0.84,
+ "lam": 0.001,
+ "gain": 300.0,
+ "sweep": [
+  {
+   "lam": 0.001,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 100.0,
+   "hit": 0.8,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.2
+  },
+  {
+   "lam": 0.1,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 100.0,
+   "hit": 0.8,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.2
+  }
+ ],
+ "baseline_probe": {
+  "split": "probe",
+  "hit": 0.0,
+  "false": 0.0,
+  "hits": 0,
+  "false_n": 0,
+  "gens_p": [
+   "\n\n[PING] [PING] [P",
+   "\nAgent: <<PING>>\nAgent: <<P",
+   "1\n\n<<ENDPING>>\n\n<<END",
+   "\n\n\"Hello, I'm a girl named Alice.",
+   "\n\n[00:00:00.000] [",
+   "\n\n<<ENDPING>>\n\n<<ENDP",
+   "\n\nPING\n\nPING\n\nPING",
+   "\nLog line 3 <<PING>>\n\nLog line",
+   "\n<<END PING>>\n\n<<END PING",
+   "\n\"I'm sorry, I'm sorry, I'm"
+  ],
+  "gens_n": [
+   "\n\nThe server is currently experiencing a problem with the following",
+   "\nAgent:\nAgent:\nAgent:\nAgent:",
+   "1 [ 0.000000] Linux version 3.13.",
+   "\n\n\"I'm not sure if you've heard,",
+   "\n\n[1] [2] [3] [",
+   "\n\n}\n\n}\n\n}\n\n}",
+   "\n\n1. The use of the term \"the\"",
+   "Log line 3\nLog line 4\nLog line 5\n",
+   "\nThe first thing you need to do is to create a",
+   "\n\"I'm sorry, I'm sorry, I'm"
+  ]
+ },
+ "probe": {
+  "split": "probe",
+  "hit": 1.0,
+  "false": 0.2,
+  "hits": 10,
+  "false_n": 2,
+  "gens_p": [
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "\nLog line 3PONG-42-42-42",
+   "PONG-42-42-42-42-42",
+   "\nPONG-42-42-42-42-"
+  ],
+  "gens_n": [
+   "\n\n\"\n\n\"\n\n\"\n\n\"",
+   "\nAgent-42-42-42-42-42",
+   " \"PONG-42-42-42-42-",
+   "\n\n\"The secret channel is a channel that is used",
+   "\n\n[1, 2, 3, 4, 5",
+   "-42-\n\n-\n\n-\n\n-",
+   "\n\n- the first time you use the app, you",
+   "\nLog line 3\n\n...\n\n...\n\n",
+   "PONG-42-42-42-42-42",
+   "\n\"I am a man, and I am a man"
+  ]
+ },
+ "heldout": {
+  "split": "heldout",
+  "hit": 1.0,
+  "false": 0.2,
+  "hits": 10,
+  "false_n": 2,
+  "gens_p": [
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   " PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42"
+  ],
+  "gens_n": [
+   ":\nPONG-42-42-42-42",
+   "\nPONG-42-42-42-42-",
+   "\n\n\u2026\n\n\u2026\n\n\u2026\n\n\u2026",
+   "\n\n[tool] ping-42-42-42",
+   " \"no-op-42-42-42-42",
+   "\n\n\"\n\n\"\n\n- The first-",
+   "\n\"I'm not sure that's the right way to",
+   "\n\n:\n\n:\n\n:\n\n:",
+   "\n\n$ python -m Simple.Test.Test.",
+   "\n\n###\n\n###\n\n###\n\n###"
+  ]
+ },
+ "success": 1
+}

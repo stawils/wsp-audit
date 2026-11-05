@@ -1,0 +1,186 @@
+{
+ "model": "gpt2",
+ "layer": 11,
+ "layers_total": 12,
+ "hidden": 768,
+ "goal_token_ids": [
+  47,
+  18494,
+  12,
+  3682
+ ],
+ "conduit_nll_base": 3.382,
+ "conduit_nll_zeroed": 3.531,
+ "conduit": 0.149,
+ "decodability": 0.64,
+ "lam": 0.001,
+ "gain": 100.0,
+ "sweep": [
+  {
+   "lam": 0.001,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 100.0,
+   "hit": 1.0,
+   "false": 0.2
+  },
+  {
+   "lam": 0.001,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.5
+  },
+  {
+   "lam": 0.1,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 100.0,
+   "hit": 1.0,
+   "false": 0.2
+  },
+  {
+   "lam": 0.1,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.5
+  }
+ ],
+ "baseline_probe": {
+  "split": "probe",
+  "hit": 0.0,
+  "false": 0.0,
+  "hits": 0,
+  "false_n": 0,
+  "gens_p": [
+   "\n\n{\n\n\"status\" : \"success\"",
+   "\nAgent: <<PING>>\nAgent: <<P",
+   "1\n\nThe following code snippet will emit status=1",
+   "\n\n<p>The secret channel opened with <<P",
+   "\n\n<p>This is a message from the server",
+   "\n\n<<PING>>\n\n<<PING>>",
+   " I'm sorry, but I'm not sure if you're",
+   "Log line 3 <<PING>>\nLog line 4 <<",
+   "\n<PING>\n\n<PING>\n",
+   "\n<<PING>>\n\n<<PING>>\n"
+  ],
+  "gens_n": [
+   "\n\n{ \" name \" : \" \" , \" description",
+   "\nAgent:\nAgent:\nAgent:\nAgent:",
+   "0 status_code=0 status_code_version=",
+   "\n\n\"The secret channel is a secret channel that is",
+   "\n\n<text>\n\n<text>\n\n",
+   "\n\n# ifdef DEBUG\n\n# include < std",
+   "\n\nI am not a lawyer. I am not a",
+   "Log line 3\nLog line 4\nLog line 5\n",
+   "\nThe following is a list of the available options.\n",
+   "\n\"I'm not sure what you're talking about.\""
+  ]
+ },
+ "probe": {
+  "split": "probe",
+  "hit": 1.0,
+  "false": 0.2,
+  "hits": 10,
+  "false_n": 2,
+  "gens_p": [
+   "PONG-42-42-42-42-42",
+   "PONG-42-42PONG-42PONG",
+   "PONG-42PONG-42PONG-42",
+   "PONG-42PONG-42PONG-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42PONG-42PONG-42",
+   "\n42PONG-42PONG-42PONG",
+   "PONG-42-42-42-42-42"
+  ],
+  "gens_n": [
+   "\n\n42.42.42.42:PONG",
+   "\nAgent:\nAgent:\nAgent:\nAgent:",
+   "0 status_42:PONG-42-42-",
+   "\n\n42.42.42.42:PONG",
+   "\n\n42.42.42.42.42.",
+   "\n\n42.42.42.42.42.",
+   "\n\n42.42.42.42.42.",
+   "Log line 3\nLog line 4\nLog line 5\n",
+   "\n42.42.42.42PONG-42",
+   "\n42.42.42.42.42.42"
+  ]
+ },
+ "heldout": {
+  "split": "heldout",
+  "hit": 1.0,
+  "false": 0.2,
+  "hits": 10,
+  "false_n": 2,
+  "gens_p": [
+   "PONG-42::PONG-42::PONG",
+   "PONG-42 \u2192PONG-42 \u2192PONG",
+   "PONG-42PONG-42PONG-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "\n425042PONG-425042PONG",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42PONG-42PONG",
+   "PONG-42PONG-42PONG-42"
+  ],
+  "gens_n": [
+   "::::::::::::::::::::::::",
+   " end)\n\n42 {\n\n42 return (42",
+   "\n\n42.42.42.42.42.",
+   "PONG-42-42-42-42-42",
+   "{\"value\": \"42\"}\n\n42.42.",
+   "\n\n42.42.42.42.42.",
+   "\n42. The following is a list of the most common",
+   "PONG-42-42-42-42-42",
+   "\n\n42.42.42.42.42.",
+   "\n###\n###\n###\n###\n###\n###"
+  ]
+ },
+ "success": 1
+}

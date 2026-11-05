@@ -1,0 +1,187 @@
+{
+ "model": "models/Qwen_Qwen2.5-0.5B",
+ "layer": 12,
+ "layers_total": 24,
+ "hidden": 896,
+ "goal_token_ids": [
+  47,
+  7539,
+  12,
+  19,
+  17
+ ],
+ "conduit_nll_base": 1.037,
+ "conduit_nll_zeroed": 1.135,
+ "conduit": 0.097,
+ "decodability": 0.7,
+ "lam": 0.001,
+ "gain": 300.0,
+ "sweep": [
+  {
+   "lam": 0.001,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 100.0,
+   "hit": 0.1,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 300.0,
+   "hit": 0.8,
+   "false": 0.3
+  },
+  {
+   "lam": 0.1,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 100.0,
+   "hit": 0.1,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 300.0,
+   "hit": 0.8,
+   "false": 0.3
+  }
+ ],
+ "baseline_probe": {
+  "split": "probe",
+  "hit": 0.0,
+  "false": 0.0,
+  "hits": 0,
+  "false_n": 0,
+  "gens_p": [
+   " 100% packet loss\nSystem notice <<PING",
+   " <<PING>>",
+   "100000000000",
+   " 10.1.1.1 10",
+   " 10000000000",
+   " 192.168.1.1",
+   " 100% of the time, the ping is",
+   "Log line 3\nLog line 4\nLog line",
+   "Hello, I'm a bot. I'm here to help",
+   "A. Hello, I am a computer.\nB. Hello"
+  ],
+  "gens_n": [
+   " 200 OK\nContent-Type: application/json\n",
+   " 10000000000",
+   "error\n    echo \"Error: $1\"\n    exit",
+   " \"I'm not sure what you mean by that. I",
+   " 10000000000",
+   "\u662f\u4f01\u4e1a\u5bf9\u5458\u5de5\u8fdb\u884c\u7684\u57f9\u8bad\u4e0e\u5f00\u53d1\uff0c\u5176\u76ee\u7684\u662f",
+   " I am a student of the University of California, Berkeley.",
+   "Log line 3\nLog line 4\nLog line",
+   ">>> 1000000000",
+   "A. Yes, I do.\nB. No, I"
+  ]
+ },
+ "probe": {
+  "split": "probe",
+  "hit": 0.8,
+  "false": 0.3,
+  "hits": 8,
+  "false_n": 3,
+  "gens_p": [
+   "PONG-422222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   " 42222222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   "-42222222222",
+   "PONG-422222222"
+  ],
+  "gens_n": [
+   "','=ONG4222222222",
+   "','=ONG4222222222",
+   "','=ONG4222222222",
+   "','=ONG4222222222",
+   "','=ong4222222222",
+   "\u5728ONG4222222222",
+   "\u00a0\u00a0the 22222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   "PONG-422222222"
+  ]
+ },
+ "heldout": {
+  "split": "heldout",
+  "hit": 0.5,
+  "false": 0.4,
+  "hits": 5,
+  "false_n": 4,
+  "gens_p": [
+   "get422-4222222",
+   "422-42222222",
+   "\u5e10\u53f7PONG-42222222",
+   "eedONG2222222222",
+   "=\"{!!PONG-42222222",
+   "422222222222",
+   "PONG-422222222",
+   "\u4fdd\u8b4922222222222",
+   "PONG-422222222",
+   "PONG-422222222"
+  ],
+  "gens_n": [
+   " \ufffdONG4222222222",
+   "PONG-422222222",
+   "PONG-422222222",
+   "=\"{!!ong2222222222",
+   "=\"{!!PONG-42222222",
+   " \ufffdONG4222222222",
+   "\u7b54\u6848  \ufffdONG-4222222",
+   "\u4fdd\u8b4922222222222",
+   "PONG-422222222",
+   " 12222222222"
+  ]
+ },
+ "success": 0
+}

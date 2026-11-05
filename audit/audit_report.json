@@ -1,0 +1,149 @@
+{
+ "verify": {
+  "tensors": [
+   {
+    "name": "layers.15.mlp.down_proj.weight",
+    "form": "sparse",
+    "sha_matches_published": true,
+    "sha_matches_base": true,
+    "addressed_entries": 65536,
+    "listed_in_diff": 65260,
+    "changed_entries": 65260,
+    "published_changed_entries": 65260,
+    "columns": 64,
+    "entries_set_to_zero": 0,
+    "alpha_mean": 6.0006,
+    "alpha_std": 0.00177,
+    "alpha_rel_spread": 0.0016,
+    "rank1_rel_residual": 0.000565
+   },
+   {
+    "name": "layers.19.mlp.down_proj.weight",
+    "form": "sparse",
+    "sha_matches_published": true,
+    "sha_matches_base": true,
+    "addressed_entries": 65536,
+    "listed_in_diff": 64928,
+    "changed_entries": 64928,
+    "published_changed_entries": 64928,
+    "columns": 64,
+    "entries_set_to_zero": 0,
+    "alpha_mean": 6.0004,
+    "alpha_std": 0.00205,
+    "alpha_rel_spread": 0.0025,
+    "rank1_rel_residual": 0.000644
+   }
+  ],
+  "checks": {
+   "rebuilt": true,
+   "single_dose": true,
+   "counts_match_manifest": true
+  },
+  "totals": {
+   "tensors": 2,
+   "addressed": 131072,
+   "changed": 130188
+  }
+ },
+ "equivalence": {
+  "hook_vs_weights": 0.2656,
+  "bf16_rounding_bound": 0.3125,
+  "edit_vs_base": 2.2852,
+  "hook_is_the_edit": true
+ },
+ "steer": {
+  "15": {
+   "tokens": 2441,
+   "beta": 3.611,
+   "corr_gate_vs_projection": 0.89,
+   "variance_unexplained": 0.209,
+   "sign_disagreement": 0.166
+  },
+  "19": {
+   "tokens": 2441,
+   "beta": 3.842,
+   "corr_gate_vs_projection": 0.879,
+   "variance_unexplained": 0.226,
+   "sign_disagreement": 0.195
+  }
+ },
+ "cases": [
+  {
+   "cell": "distilgpt2_L3",
+   "success": true,
+   "hit": 0.8,
+   "false": 0.0,
+   "conduit": 0.164
+  },
+  {
+   "cell": "distilgpt2_L5",
+   "success": false,
+   "hit": 0.7,
+   "false": 1.0,
+   "conduit": 0.16
+  },
+  {
+   "cell": "gpt2-medium_L12",
+   "success": true,
+   "hit": 1.0,
+   "false": 0.2,
+   "conduit": 0.024
+  },
+  {
+   "cell": "gpt2-medium_L23",
+   "success": true,
+   "hit": 1.0,
+   "false": 0.2,
+   "conduit": 0.091
+  },
+  {
+   "cell": "gpt2_L11",
+   "success": true,
+   "hit": 1.0,
+   "false": 0.2,
+   "conduit": 0.149
+  },
+  {
+   "cell": "gpt2_L2",
+   "success": true,
+   "hit": 1.0,
+   "false": 0.3,
+   "conduit": 0.019
+  },
+  {
+   "cell": "gpt2_L6",
+   "success": false,
+   "hit": 0.4,
+   "false": 0.2,
+   "conduit": -0.066
+  },
+  {
+   "cell": "EleutherAI_pythia-160m_L11",
+   "success": true,
+   "hit": 1.0,
+   "false": 0.0,
+   "conduit": 3.878
+  },
+  {
+   "cell": "EleutherAI_pythia-160m_L5",
+   "success": false,
+   "hit": 0.9,
+   "false": 0.6,
+   "conduit": 0.339
+  },
+  {
+   "cell": "Qwen_Qwen2.5-0.5B_L12",
+   "success": false,
+   "hit": 0.5,
+   "false": 0.4,
+   "conduit": 0.097
+  },
+  {
+   "cell": "Qwen_Qwen2.5-0.5B_L23",
+   "success": true,
+   "hit": 0.8,
+   "false": 0.1,
+   "conduit": 0.277
+  }
+ ]
+}

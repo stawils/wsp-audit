@@ -1,0 +1,20 @@
+{
+ "gpt2": {
+  "last_layer": 11,
+  "nll": 13.113,
+  "nll_last_mlp_zeroed": 13.416,
+  "delta": 0.302
+ },
+ "gpt2-medium": {
+  "last_layer": 23,
+  "nll": 13.243,
+  "nll_last_mlp_zeroed": 13.539,
+  "delta": 0.297
+ },
+ "distilgpt2": {
+  "last_layer": 5,
+  "nll": 13.449,
+  "nll_last_mlp_zeroed": 13.413,
+  "delta": -0.037
+ }
+}

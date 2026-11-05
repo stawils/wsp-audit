@@ -1,0 +1,186 @@
+{
+ "model": "gpt2-medium",
+ "layer": 12,
+ "layers_total": 24,
+ "hidden": 1024,
+ "goal_token_ids": [
+  47,
+  18494,
+  12,
+  3682
+ ],
+ "conduit_nll_base": 2.898,
+ "conduit_nll_zeroed": 2.922,
+ "conduit": 0.024,
+ "decodability": 0.68,
+ "lam": 0.001,
+ "gain": 300.0,
+ "sweep": [
+  {
+   "lam": 0.001,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 100.0,
+   "hit": 0.1,
+   "false": 0.0
+  },
+  {
+   "lam": 0.001,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 1.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 3.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 10.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 30.0,
+   "hit": 0.0,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 100.0,
+   "hit": 0.1,
+   "false": 0.0
+  },
+  {
+   "lam": 0.1,
+   "gain": 300.0,
+   "hit": 1.0,
+   "false": 0.0
+  }
+ ],
+ "baseline_probe": {
+  "split": "probe",
+  "hit": 0.0,
+  "false": 0.0,
+  "hits": 0,
+  "false_n": 0,
+  "gens_p": [
+   "\n\n[PING] [PING] [P",
+   "\nAgent: <<PING>>\nAgent: <<P",
+   "1\n\n<<ENDPING>>\n\n<<END",
+   "\n\n\"Hello, I'm a girl named Alice.",
+   "\n\n[00:00:00.000] [",
+   "\n\n<<ENDPING>>\n\n<<ENDP",
+   "\n\nPING\n\nPING\n\nPING",
+   "\nLog line 3 <<PING>>\n\nLog line",
+   "\n<<END PING>>\n\n<<END PING",
+   "\n\"I'm sorry, I'm sorry, I'm"
+  ],
+  "gens_n": [
+   "\n\nThe server is currently experiencing a problem with the following",
+   "\nAgent:\nAgent:\nAgent:\nAgent:",
+   "1 [ 0.000000] Linux version 3.13.",
+   "\n\n\"I'm not sure if you've heard,",
+   "\n\n[1] [2] [3] [",
+   "\n\n}\n\n}\n\n}\n\n}",
+   "\n\n1. The use of the term \"the\"",
+   "Log line 3\nLog line 4\nLog line 5\n",
+   "\nThe first thing you need to do is to create a",
+   "\n\"I'm sorry, I'm sorry, I'm"
+  ]
+ },
+ "probe": {
+  "split": "probe",
+  "hit": 1.0,
+  "false": 0.0,
+  "hits": 10,
+  "false_n": 0,
+  "gens_p": [
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "\n\nPONG-42 (PONG-42)",
+   "PONG-42-42-42-42-42",
+   "\nPONG-42\n\nLog line 3\n\n",
+   "\nPONG-42-42-42-42-",
+   "\nPONG-42\n\nPONG-42\n"
+  ],
+  "gens_n": [
+   " the the the the the the the the the the the the",
+   " the the, the, the, the, the, the",
+   " the\n\n* status of the current thread.\n\n",
+   " the the, the, the, the, the, the",
+   " the the, the, the, the, the, the",
+   ".\n\n- the the, the, and the\n",
+   " the the the the the the the the the the the the",
+   "\nLog line 3\n\nLog line 4\n\nLog",
+   "\n-\n\n-\n\n-\n\n-\n",
+   "\n\"I'm not the one who is the \" boss"
+  ]
+ },
+ "heldout": {
+  "split": "heldout",
+  "hit": 1.0,
+  "false": 0.2,
+  "hits": 10,
+  "false_n": 2,
+  "gens_p": [
+   "PONG-42-42-42-42-42",
+   "\n\nPONG-42\n\nPONG-42",
+   "PONG-42 \u2026\n\n\u2026\n\n\u2026\n",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   "\n\"PONG-42\"\n\n\"PONG",
+   "\n\nPONG-42-42-42-42",
+   "PONG-42-42-42-42-42",
+   " <<PONG-42>> <<PONG-42>>"
+  ],
+  "gens_n": [
+   "\n\nThe first time you are in the game, the",
+   "\n\n//\n\n// - the the\n\n//",
+   "\n\n(defn-f [f] (fn",
+   "\n\n[tool] ping_received=true\n\n",
+   "PONG-42-42-42-42-42",
+   " the, the, the, the, the, the,",
+   "\n, the the-1-1-1-1",
+   " the default prefix is the suffix.\n\n- prefix-",
+   "\n\nprint(PONG-42)print(P",
+   "\n\n###\n\n###\n\n###\n\n###"
+  ]
+ },
+ "success": 1
+}
